@@ -70,7 +70,7 @@ else {
         .menu ul li{
             list-style-type: none;
             display: inline;
-            padding: 0px 50px;
+            padding: 0px 30px;
         }
         .menu ul li a{
             text-decoration: none;
@@ -98,6 +98,7 @@ else {
                     <li><a>Đơn đặt hàng</a></li>
                     <li><a>Người Dùng</a></li>
                     <li><a>Thống kê</a></li>
+                    <li><a>Dịch vụ</a></li>
                 </ul>
             </div>
             <div class="group" >

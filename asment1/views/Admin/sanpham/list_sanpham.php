@@ -34,12 +34,12 @@
             text-align: center;
         }
         .menu ul {
-            padding: 5px;
+            padding: 15px;
         }
         .menu ul li{
             list-style-type: none;
             display: inline;
-            padding: 0px 50px;
+            padding: 0px 20px;
         }
         .menu ul li a{
             text-decoration: none;
@@ -67,6 +67,7 @@
                 <li><a>Đơn đặt hàng</a></li>
                 <li><a>Người Dùng</a></li>
                 <li><a>Thống kê</a></li>
+                <li><a>Dịch vụ</a></li>
             </ul>
             <tr>
                 <td>ID</td>
