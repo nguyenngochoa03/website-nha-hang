@@ -17,7 +17,7 @@
         }
         .form-group{
             background: #46c35f;
-            width: 70%;
+            width: 90%;
             margin: 0 auto;
             height: 700px;
             border-radius: 20px;
@@ -64,7 +64,7 @@
         <div class="menu">
             <ul>
                 <li><a href="index.php?url=themdanhmuc">Danh mục</a></li>
-                <li><a href="index.php?url=themsanpham">Sản phẩm</a></li>
+                <li><a href="index.php?url=list_sanpham">Sản phẩm</a></li>
                 <li><a>Đơn đặt hàng</a></li>
                 <li><a>Người Dùng</a></li>
                 <li><a>Thống kê</a></li>

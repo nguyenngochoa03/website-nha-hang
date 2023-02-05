@@ -36,10 +36,31 @@ switch ($url) {
         break;
         // SẢN PHẨM
 
-//    case '/':
-//        require_once 'controllers/adminControllers.php';
-//        $sanphamController = new sanphamControllers();
-//        echo $sanphamController->listsanpham();
-//        break;
+    case 'list_sanpham':
+        require_once 'controllers/adminControllers.php';
+        $sanphamController = new sanphamControllers();
+        echo $sanphamController->listsanpham();
+        break;
+    case 'themsanpham':
+        require_once 'controllers/adminControllers.php';
+        $sanphamController = new sanphamControllers();
+        echo $sanphamController->add_sanpham();
+        break;
+    case 'capnhatsanpham':
+        //dieu huong ve trang danh sach san pham
+        require_once 'controllers/adminControllers.php';
+        $sanphamController = new sanphamControllers();
+        echo $sanphamController->upload_sanpham();
+        break;
+    case 'suasanpham':
+        require_once 'controllers/adminControllers.php';
+        $sanphamController = new sanphamControllers();
+        echo $sanphamController->edit_sanpham();
+        break;
+    case "xoasanpham":
+        require_once 'controllers/adminControllers.php';
+        $sanphamController = new sanphamControllers();
+        echo $sanphamController->delete_sanpham();
+        break;
 }
 ?>

@@ -30,4 +30,5 @@ class danhmuc extends db
     $this->getData($sql, false);
 }
 }
+
 ?>

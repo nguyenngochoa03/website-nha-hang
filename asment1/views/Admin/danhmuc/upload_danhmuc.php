@@ -28,7 +28,7 @@ else {
         }
         .form-group{
             background: #46c35f;
-            width: 70%;
+            width: 90%;
             margin: 0 auto;
             height: 700px;
             border-radius: 20px;
