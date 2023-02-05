@@ -62,5 +62,17 @@ switch ($url) {
         $sanphamController = new sanphamControllers();
         echo $sanphamController->delete_sanpham();
         break;
+
+        // DỊCH VỤ
+    case 'themdichvu':
+        require_once 'controllers/adminControllers.php';
+        $dichvuController = new dichvuControllers();
+        echo $dichvuController->add_dichvu();
+        break;
+    case 'list_dichvu':
+        require_once 'controllers/adminControllers.php';
+        $dichvuController = new dichvuControllers();
+        echo $dichvuController->listdichvu();
+        break;
 }
 ?>

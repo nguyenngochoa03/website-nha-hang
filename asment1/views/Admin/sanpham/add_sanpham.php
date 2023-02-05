@@ -84,18 +84,18 @@
                 <ul>
                     <li><a href="index.php?url=themdanhmuc">Danh mục</a></li>
                     <li><a href="index.php?url=themsanpham">Sản phẩm</a></li>
-                    <li><a>Đơn đặt hàng</a></li>
-                    <li><a>Người Dùng</a></li>
-                    <li><a>Thống kê</a></li>
-                    <li><a>Dịch vụ</a></li>
+                    <li><a href="index.php?url=themdonhang">Đơn đặt hàng</a></li>
+                    <li><a href="index.php?url=themnguoidung">Người Dùng</a></li>
+                    <li><a href="index.php?url=/">Thống kê</a></li>
+                    <li><a href="index.php?url=themdichvu">Dịch vụ</a></li>
                 </ul>
             </div>
             <div class="group" >
-                <label for="">Mã danh mục</label>
+                <label for="">Mã sản phẩm </label>
                 <input disabled name="id" type="text" class="form-control">
             </div>
             <div class="group">
-                <label for="">Tên danh mục</label>
+                <label for="">Tên  sản phẩm </label>
                 <input name="name" id="" type="text" class="form-control">
             </div>
             <div class="group">

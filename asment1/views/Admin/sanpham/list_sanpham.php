@@ -64,10 +64,10 @@
             <ul>
                 <li><a href="index.php?url=themdanhmuc">Danh mục</a></li>
                 <li><a href="index.php?url=themsanpham">Sản phẩm</a></li>
-                <li><a>Đơn đặt hàng</a></li>
-                <li><a>Người Dùng</a></li>
-                <li><a>Thống kê</a></li>
-                <li><a>Dịch vụ</a></li>
+                <li><a href="index.php?url=themdonhang">Đơn đặt hàng</a></li>
+                <li><a href="index.php?url=themnguoidung">Người Dùng</a></li>
+                <li><a href="index.php?url=/">Thống kê</a></li>
+                <li><a href="index.php?url=themdichvu">Dịch vụ</a></li>
             </ul>
             <tr>
                 <td>ID</td>

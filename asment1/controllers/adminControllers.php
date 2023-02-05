@@ -1,6 +1,7 @@
 <?php
  require_once "models/danhmuc.php";
 require_once "models/sanpham.php";
+require_once "models/dichvu.php";
  // DANH MỤC
 
  class danhmucControllers
@@ -198,6 +199,53 @@ class sanphamControllers
   $sanpham-> deletesanpham();
   header("location:index.php?url=list_sanpham");
   include_once "views/Admin/sanpham/list_sanpham.php";
+ }
+}
+
+// DỊCH VỤ
+class dichvuControllers{
+  function add_dichvu(){
+    $dichvu = new dichvu();
+   if (isset($_POST["themmoi"]) && ($_POST["themmoi"])) {
+    $name = $_POST["name"];
+    $price = $_POST["price"];
+    $description = $_POST["description"];
+    $hinh = $_FILES['hinh']['name'];
+    $maxsize = 2000000;
+    $allowUpload = true;
+    $allowType = ['jpg', 'png', 'jpeg', 'gif'];
+    $target_dir = 'views/src/upload/';
+    $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
+    if ($_FILES['hinh']['size'] > $maxsize) {
+     $thongbao = " Ảnh của bạn có dung lượng quá lớn không thể upload";
+     $allowUpload = false;
+    }
+    if (!in_array($target_file, $allowType)) {
+     $thongbao = 'Chỉ được upload các định dạng JPG, PNG, JPEG, GIF';
+     $allowupload = false;
+    }
+    if ($allowUpload == true) {
+     move_uploaded_file($_FILES['hinh']['tmp_name'], $target_file);
+     $thongbao = "Ảnh của bạn đã được thêm thành công ";
+     $dichvu = $dichvu->dichvu_inset($name,$hinh,$price,$description);
+     $thongbao = "Thêm thành công";
+     header("location: ?url=list_dichvu");
+    } else {
+     $thongbao = "Bạn không thể thêm danh mục";
+    }
+
+   }
+   include_once "views/Admin/dichvu/add_dichvu.php";
+
+  }
+
+ function listdichvu()
+ {
+  //gọi model
+  $dichvu = new dichvu();
+  $dichvu = $dichvu->getdichvu();
+
+  include_once "views/Admin/dichvu/list_dichvu.php";
  }
 }
 ?>
