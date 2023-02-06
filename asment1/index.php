@@ -4,7 +4,9 @@ $url = isset($_GET['url']) == true ? $_GET['url'] : "/";
 switch ($url) {
 
     case '/':
+        // gọi qua danh sách sản phẩm
         require_once 'controllers/adminControllers.php';
+        // khỏi tại đối tượng
         $danhmucController = new danhmucControllers();
         echo $danhmucController->listdanhmuc();
         break;
@@ -19,7 +21,7 @@ switch ($url) {
         echo $danhmucController->add_danhmuc();
         break;
     case 'capnhatdanhmuc':
-        //dieu huong ve trang danh sach san pham
+
         require_once 'controllers/adminControllers.php';
         $danhmucController = new danhmucControllers();
         echo $danhmucController->upload_danhmuc();
@@ -47,7 +49,7 @@ switch ($url) {
         echo $sanphamController->add_sanpham();
         break;
     case 'capnhatsanpham':
-        //dieu huong ve trang danh sach san pham
+
         require_once 'controllers/adminControllers.php';
         $sanphamController = new sanphamControllers();
         echo $sanphamController->upload_sanpham();
@@ -73,6 +75,21 @@ switch ($url) {
         require_once 'controllers/adminControllers.php';
         $dichvuController = new dichvuControllers();
         echo $dichvuController->listdichvu();
+        break;
+    case 'capnhatdịchvu':
+        require_once 'controllers/adminControllers.php';
+        $dichvuController = new dichvuControllers();
+        echo $dichvuController->upload_dichvu();
+        break;
+    case 'suadichvu':
+        require_once 'controllers/adminControllers.php';
+        $dichvuController = new dichvuControllers();
+        echo $dichvuController->edit_dichvu();
+        break;
+    case "xoadichvu":
+        require_once 'controllers/adminControllers.php';
+        $dichvuController = new dichvuControllers();
+        echo $dichvuController->delete_dichvu();
         break;
 }
 ?>

@@ -11,12 +11,12 @@
             text-align: center;
             color: #a01a1f;
             background: white;
-            border-radius: 20px;
+            /*border-radius: 20px;*/
             height: 70px;
         }
         .form-group{
-            background: #46c35f;
-            width: 90%;
+            background: darksalmon;
+            width: 100%;
             margin: 0 auto;
             height: 700px;
             border-radius: 20px;
@@ -30,7 +30,7 @@
         }
         .menu{
             background:#0f1531;
-            border-radius: 5px;
+
             text-align: center;
         }
         .menu ul {
@@ -91,14 +91,14 @@
 
                 echo'
             <tr>
-            <td>' .$id_dv. '</td>
+            <td>' .$id. '</td>
             <td>' .$name. '</td>
             <td>' .$image. '</td>           
             <td>' .$price. ' </td>
              <td>' .$description. ' </td>
-            <td><a href="?url=suadichvu&id='.$id_dv.'"><input   type="button"  value="Sửa"></a></td>
+            <td><a href="?url=suadichvu&id='.$id.'"><input   type="button"  value="Sửa"></a></td>
             <td><a href="?url=themdichvu"><input   type="submit" name="themmoi" value="Thêm mới"></a></td>           
-            <td><a href="?url=xoadichvu&id='.$id_dv.'" onclick="return confirm(`Bạn muốn xóa?`)" ; id="delete">
+            <td><a href="?url=xoadichvu&id='.$id.'" onclick="return confirm(`Bạn muốn xóa?`)" ; id="delete">
                                     <input class="btn btn-danger btn2" type="button" value="Xóa"></a></td>
                                     
         </tr>

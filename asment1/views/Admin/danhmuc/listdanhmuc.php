@@ -12,12 +12,12 @@
             text-align: center;
             color: #a01a1f;
             background: white;
-            border-radius: 20px;
+            /*border-radius: 20px;*/
             height: 70px;
         }
         .form-group{
-            background: #46c35f;
-            width: 90%;
+            background: darksalmon;
+            width: 100%;
             margin: 0 auto;
             height: 700px;
             border-radius: 20px;
@@ -31,7 +31,7 @@
         }
         .menu{
             background:#0f1531;
-            border-radius: 5px;
+            /*border-radius: 5px;*/
             text-align: center;
         }
         .menu ul {
